@@ -944,7 +944,56 @@ max-width: 60rem;
         width: 90%;
         right: 2rem;
     }
+    .productpage {
+        flex-direction: column;
+        max-width: 100%;
+    }
+
+    .gallery {
+        flex-basis: 100%;
+        padding-top: 30px;
+        transform: scale(1);
+    }
+
+    .gallery img {
+        margin-top: 0;
+        padding-top: 0;
+    }
+
+    .details {
+        flex-basis: 100%;
+        padding: 15px;
+        padding-left: 20px;
+    }
+
+    .details h1 {
+        font-size: 24px;
+    }
+
+    .details h2 {
+        font-size: 20px;
+    }
+
+    .color-select {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .color-select p {
+        width: 100%;
+    }
+
+    .color-select span {
+        margin-right: 0;
+        margin-bottom: 8px;
+    }
+
+    form button {
+        font-size: 15px;
+        margin-top: 25px;
+    }
 }
+
 
 @media (max-width:450px){
 
