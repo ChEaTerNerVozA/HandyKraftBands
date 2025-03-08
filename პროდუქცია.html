@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HandKrafter Bands</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
+
+</head>
+<body>
+    
+<header class="header">
+    <a href="მთავარი.html" class="logo">
+        <img src="images/Logo.png" alt="">
+    </a>
+
+    <nav class="navbar">
+        <a href="მთავარი.html">მთავარი</a>
+        <a href="#">ჩვენ შესახებ</a>
+        <a href="პროდუქცია.html">პროდუქცია</a>
+        <a href="საკონტაქტო.html">საკონტაქტო</a>
+    </nav>
+
+    <div class="icons">
+        <div class="fas fa-search" id="search-btn"></div>
+        <div class="fas fa-shopping-cart" id="cart-btn"></div>
+        <div class="fas fa-bars" id="menu-btn"></div>
+    </div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const menuBtn = document.getElementById("menu-btn");
+            const navbar = document.querySelector(".header .navbar");
+    
+            menuBtn.addEventListener("click", function() {
+                navbar.classList.toggle("active");
+            });
+    
+            document.addEventListener("click", function(event) {
+                if (!navbar.contains(event.target) && !menuBtn.contains(event.target)) {
+                    navbar.classList.remove("active");
+                }
+            });
+    
+            document.getElementById("search-btn").addEventListener("click", function() {
+                console.log("Search icon clicked");
+            });
+    
+            document.getElementById("cart-btn").addEventListener("click", function() {
+                console.log("Cart icon clicked");
+            });
+        });
+    </script>
+
+
+    <div class="search-form">
+        <input type="search" id="search-box" placeholder="search here. . .">
+        <label for="search-box" class="fas fa-search"></label>
+    </div>
+
+    <div class="cart-items-container">
+        <a href="#" class="btn">Checkout now</a>
+    </div>
+
+</header>
+
+<section class="menu" id="menu">
+
+    <h1 class="heading">our <span>products</span></h1>
+
+    <div class="box-container">
+
+        <div class="box">
+            <img src="images/Square Knot.png" alt="">
+            <h3>A001</h3>
+            <div class="price">5 ლარი</div>
+            <a href="a001.html" class="btn">შეუკვეთე</a>
+        </div>
+
+        <div class="box">
+            <img src="images/3Color Square Knot.png" alt="">
+            <h3></h3>
+            <div class="price">6 ლარი</div>
+            <a href="#" class="btn">შეუკვეთე</a>
+        </div>
+
+        <div class="box">
+            <img src="images/Head Knot.png" alt="">
+            <h3></h3>
+            <div class="price">5 ლარი</span></div>
+            <a href="#" class="btn">შეუკვეთე</a>
+        </div>
+
+        <div class="box">
+            <img src="images/2Color Macmane Bracelet.png" alt="">
+            <h3></h3>
+            <div class="price">5 ლარი</div>
+            <a href="#" class="btn">შეუკვეთე</a>
+        </div>
+
+        <div class="box">
+            <img src="images/Macmane Bracelet A025.png" alt="">
+            <h3></h3>
+            <div class="price">7 ლარი</span></div>
+            <a href="#" class="btn">შეუკვეთე</a>
+        </div>
+
+        <div class="box">
+            <img src="images/Square Knot Variation.png" alt="">
+            <h3></h3>
+            <div class="price">6 ლარი</span></div>
+            <a href="#" class="btn">შეუკვეთე</a>
+        </div>
+
+        <div class="box">
+            <img src="images/Square Knot Variation A001.png" alt="">
+            <h3>A004</h3>
+            <div class="price">5 ლარი</div>
+            <a href="#" class="btn">შეუკვეთე</a>
+        </div>
+
+        <div class="box">
+            <img src="" alt="">
+            <h3></h3>
+            <div class="price">5 ლარი</div>
+            <a href="#" class="btn">შეუკვეთე</a>
+        </div>
+        
+        <div class="box">
+            <img src="" alt="">
+            <h3></h3>
+            <div class="price"></div>
+            <a href="#" class="btn">შეუკვეთე</a>
+        </div>
+
+    </div>    
+
+    </div>
+
+</section>
+
+<section class="footer">
+    <div class="share">
+        <a href="#" class="fab fa-facebook-f"></a>
+        <a href="#" class="fab fa-instagram"></a>
+    </div>
+
+    <div class="links">
+        <a href="მთავარი.html">მთავარი</a>
+        <a href="#">ჩვენ შესახებ</a>
+        <a href="პროდუქცია.html">პროდუქცია</a>
+        <a href="საკონტაქტო.html">საკონტაქტო</a>
+    </div>
+
+    <div class="credit">created by <span>web designer</span> | all rights reserved</div>
+    </section>
+
+    
+    <script src="js/script.js"></script>
+</body>
+</html>
