@@ -817,3 +817,12 @@ max-width: 60rem;
     width: 100%;
     text-align: center;
 }
+
+.caution-message {
+    color: red;
+    font-weight: bold;
+    text-align: center;
+    font-size: 18px;
+    padding-top: 100px;
+    margin-bottom: 15px;
+}

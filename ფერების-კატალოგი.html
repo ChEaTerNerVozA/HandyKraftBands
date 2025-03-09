@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ფერების კატალოგი</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
+
+</head>
+<body>
+    
+<header class="header">
+    <a href="index.html" class="logo">
+        <img src="images/Logo.png" alt="">
+    </a>
+
+    <nav class="navbar">
+        <a href="index.html">მთავარი</a>
+        <a href="#">ჩვენ შესახებ</a>
+        <a href="ფერების-კატალოგი.html">ფერების კატალოგი</a>
+        <a href="პროდუქცია.html">პროდუქცია</a>
+        <a href="საკონტაქტო.html">საკონტაქტო</a>
+    </nav>
+
+    <div class="icons">
+        <div class="fas fa-search" id="search-btn"></div>
+        <div class="fas fa-shopping-cart" id="cart-btn"></div>
+        <div class="fas fa-bars" id="menu-btn"></div>
+    </div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const menuBtn = document.getElementById("menu-btn");
+            const navbar = document.querySelector(".header .navbar");
+    
+            menuBtn.addEventListener("click", function() {
+                navbar.classList.toggle("active");
+            });
+    
+            document.addEventListener("click", function(event) {
+                if (!navbar.contains(event.target) && !menuBtn.contains(event.target)) {
+                    navbar.classList.remove("active");
+                }
+            });
+    
+            document.getElementById("search-btn").addEventListener("click", function() {
+                console.log("Search icon clicked");
+            });
+    
+            document.getElementById("cart-btn").addEventListener("click", function() {
+                console.log("Cart icon clicked");
+            });
+        });
+    </script>
+
+
+    <div class="search-form">
+        <input type="search" id="search-box" placeholder="search here. . .">
+        <label for="search-box" class="fas fa-search"></label>
+    </div>
+
+    <div class="cart-items-container">
+        <a href="#" class="btn">Checkout now</a>
+    </div>
+
+</header>
+
+<section class="menu" id="menu">
+
+    <h1 class="heading">our <span>products</span></h1>
+
+    <p class="caution-message">⚠️ გაფრთხილება: ფერები შეიძლება ოდნავ განსხვავდებოდეს რეალურ ფერთან შედარებით.</p>
+
+
+    <div class="box-container">
+
+        <div class="box">
+            <h3>წითელი</h3>
+            <img src="images/Colors/red.png" alt="">
+        </div>
+        <div class="box">
+            <h3>ხაკი</h3>
+            <img src="images/Colors/khaki.png" alt="">
+            <h2>ეს ფერი სამწუხაროდ მარაგში აღარ არის, ველოდებით მარაგის შევსებას</h2>
+        </div>
+        <div class="box">
+            <h3>ყვითელი</h3>
+            <img src="images/Colors/yellow.png" alt="">
+            <h2>ეს ფერი სამწუხაროდ მარაგში აღარ არის, ველოდებით მარაგის შევსებას</h2>
+        </div>
+        <div class="box">
+            <h3>ცაცხის მწვანე</h3>
+            <img src="images/Colors/limegreen.png" alt="">
+        </div>
+        <div class="box">
+            <h3>მწვანე</h3>
+            <img src="images/Colors/green.png" alt="">
+            <h2>ეს ფერი სამწუხაროდ მარაგში აღარ არის, ველოდებით მარაგის შევსებას</h2>
+        </div>
+        <div class="box">
+            <h3>არმიის მწვანე</h3>
+            <img src="images/Colors/armygreen.png" alt="">
+            <h2>ეს ფერი სამწუხაროდ მარაგში აღარ არის, ველოდებით მარაგის შევსებას</h2>
+        </div>
+        <div class="box">
+            <h3>შავგვრემანი მწვანე</h3>
+            <img src="images/Colors/blackishgreen.png" alt="">
+            <h2>ეს ფერი სამწუხაროდ მარაგში აღარ არის, ველოდებით მარაგის შევსებას</h2>
+        </div>
+        <div class="box">
+            <h3>ღია ცისფერი</h3>
+            <img src="images/Colors/lightblue.png" alt="">
+        </div>
+        <div class="box">
+            <h3>ღია ლურჯი</h3>
+            <img src="images/Colors/lightskyblue.png" alt="">
+            <h2>ეს ფერი სამწუხაროდ მარაგში აღარ გვაქ, ველოდებით მარაგის შევსებას</h2>
+        </div>
+        <div class="box">
+            <h3>საფირონისფერი ლურჯი</h3>
+            <img src="images/Colors/sapphireblue.png" alt="">
+        </div>
+        <div class="box">
+            <h3>საზღვაო ლურჯი</h3>
+            <img src="images/Colors/navyblue.png" alt="">
+            <h2>ეს ფერი სამწუხაროდ მარაგში აღარ გვაქ, ველოდებით მარაგის შევსებას</h2>
+        </div>
+        <div class="box">
+            <h3>იისფერი</h3>
+            <img src="images/Colors/purple.png" alt="">
+        </div>
+        <div class="box">
+            <h3>ღია ისფერი</h3>
+            <img src="images/Colors/lightpurple.png" alt="">
+            <h2>ეს ფერი სამწუხაროდ მარაგში აღარ გვაქ, ველოდებით მარაგის შევსებას</h2>
+        </div>
+        <div class="box">
+            <h3>ხისფერი ვარდისფერი</h3>
+            <img src="images/Colors/rosewood.png" alt="">
+            <h2>ეს ფერი სამწუხაროდ მარაგში აღარ გვაქ, ველოდებით მარაგის შევსებას</h2>
+        </div>
+        <div class="box">
+            <h3>როლანდის იისფერი</h3>
+            <img src="images/Colors/rolandviolet.png" alt="">
+            <h2>ეს ფერი სამწუხაროდ მარაგში აღარ გვაქ, ველოდებით მარაგის შევსებას</h2>
+        </div>
+        <div class="box">
+            <h3>გუაში</h3>
+            <img src="images/Colors/gouache.png" alt="">
+            <h2>ეს ფერი სამწუხაროდ მარაგში აღარ გვაქ, ველოდებით მარაგის შევსებას</h2>
+        </div>
+        <div class="box">
+            <h3>შავი</h3>
+            <img src="images/Colors/black.png" alt="">
+        </div>
+        <div class="box">
+            <h3>თეთრი</h3>
+            <img src="images/Colors/white.png" alt="">
+        </div>
+
+    </div>    
+
+    </div>
+
+</section>
+
+<section class="footer">
+    <div class="share">
+        <a href="#" class="fab fa-facebook-f"></a>
+        <a href="#" class="fab fa-instagram"></a>
+    </div>
+
+    <div class="links">
+        <a href="index.html">მთავარი</a>
+        <a href="#">ჩვენ შესახებ</a>
+        <a href="ფერების-კატალოგი.html">ფერების კატალოგი</a>
+        <a href="პროდუქცია.html">პროდუქცია</a>
+        <a href="საკონტაქტო.html">საკონტაქტო</a>
+    </div>
+
+    <div class="credit">created by <span>web designer</span> | all rights reserved</div>
+    </section>
+
+    
+    <script src="js/script.js"></script>
+</body>
+</html>

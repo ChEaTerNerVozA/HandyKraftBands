@@ -3,14 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HandKrafter Bands</title>
 
-    <link rel="stylesheet" href="css/style.css">
+    <title>B002</title>
+
+    <link rel="stylesheet" href="css/prodtest.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
 
 </head>
-<body>
-    
+
 <header class="header">
     <a href="index.html" class="logo">
         <img src="images/Logo.png" alt="">
@@ -74,85 +74,70 @@
 
 </header>
 
-    <section class="home" id="home">
-        <div class="content">
-            <h3>HandKrafter Bands</h3>
-            <p>შეიძინეთ ხელნაკეთი სამაჯურები დაბალ ფასად</p>
-                 <a href="პროდუქცია.html" class="btn">შეიძინე ახლავე</a>
+<body>
+    <div class="containerpg">
+        <div class="productpage">
+            <div class="gallery">
+                <img src="images/Square Knot.png" id="productImg">
+                <div class="controls">
+                    <span class="btnpro active"></span>
+                    <span class="btnpro"></span>
+                    <span class="btnpro"></span>
+                </div>
+            </div>
+            <div class="details">
+                <h1> </h1>
+                <h2> 5 ლარი </h2>
+                <p> Chemi nawvalevia boishvili viyve</p>
+
+                <form>
+                    <div class="color-select">
+                        <p> ფერი </p>
+                        <label for="red">
+                            <input type="radio" name="color" id="red">
+                            <span class="color-1"></span>
+                        </label>
+                        <label for="blue">
+                            <input type="radio" name="color" id="blue">
+                            <span class="color-2"></span>
+                        </label>
+                        <label for="green">
+                            <input type="radio" name="color" id="green">
+                            <span class="color-3"></span>
+                        </label>
+                        <label for="purple">
+                            <input type="radio" name="color" id="purple">
+                            <span class="color-4"></span>
+                        </label>
+                        <label for="black">
+                            <input type="radio" name="color" id="black">
+                            <span class="color-5"></span>
+                        </label>
+                        <label for="white">
+                            <input type="radio" name="color" id="white">
+                            <span class="color-6"></span>
+                        </label>
+                    </div>
+                    <button>დროებით ეს ფუნქცია არ მუშაობს.
+                        შესაკვეთად გადადით საკონტაქტო გვერდზე</button>
+                </form>
+            </div>
         </div>
-    </section>
-
-<section class="menu" id="menu">
-
-    <h1 class="heading">ჩვენი პროდუქცია</h1>
-
-    <div class="box-container">
-
-        <div class="box">
-            <img src="images/Square Knot.png" alt="">
-            <h3></h3>
-            <div class="price">5 ლარი</div>
-            <a href="#" class="btn">შეუკვეთე</a>
-        </div>
-
-        <div class="box">
-            <img src="images/3Color Square Knot.png" alt="">
-            <h3></h3>
-            <div class="price">6 ლარი</div>
-            <a href="#" class="btn">შეუკვეთე</a>
-        </div>
-
-        <div class="box">
-            <img src="images/Head Knot.png" alt="">
-            <h3></h3>
-            <div class="price">5 ლარი</span></div>
-            <a href="#" class="btn">შეუკვეთე</a>
-        </div>
-
-        <div class="box">
-            <img src="images/2Color Macmane Bracelet.png" alt="">
-            <h3></h3>
-            <div class="price">5 ლარი</div>
-            <a href="#" class="btn">შეუკვეთე</a>
-        </div>
-
-        <div class="box">
-            <img src="images/Macmane Bracelet A025.png" alt="">
-            <h3></h3>
-            <div class="price">7 ლარი</span></div>
-            <a href="#" class="btn">შეუკვეთე</a>
-        </div>
-
-    <div>
-        =<a href="პროდუქცია.html" class="btnseemore">ნახე მეტი</a>
-    </div>    
-
     </div>
-
-</section>
-
-<section class="about" id="about">
-
-    <h1 class="heading"><span>ჩვენ შესახებ</span></h1>
-    <div class="row">
-        <div class="image">
-            <img src="images/Macmane Bracelet A025.png" alt="">
-        </div>
+    <script>
+        let productImg = document.getElementById("productImg");
+        let btn = document.getElementsByClassName("btnpro")
     
-        <div class="content">
-                <h3>როგორ შეიქმნა ჩვენი მაღაზია</h3>
-            <p>ეს ყველაფერი მარტივი იდეით და შემოქმედებითობის გატაცებით დაიწყო. 
-                რაც დაიწყო როგორც პატარა ჰობი, სამაჯურების დამზადება მეგობრებისა და ოჯახისთვის.</p>
-            <p></p>
-            <a href="#" class="btn">შეიტყვე მეტი</a>
-        </div>
-    
-    </div>
-    
-</section>
-
-
-
+        btn[0].onclick = function(){
+            productImg.src = "images/Square Knot.png";
+        }
+        btn[1].onclick = function(){
+            productImg.src = "#";
+        }
+        btn[2].onclick = function(){
+            productImg.src = "#";
+        }
+    </script>
 <section class="footer">
     <div class="share">
         <a href="#" class="fab fa-facebook-f"></a>
@@ -170,7 +155,9 @@
     <div class="credit">created by <span>web designer</span> | all rights reserved</div>
     </section>
 
-    <script src="js/script.js"></script>
+<script src="js/script.js"></script>
+<script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
+
 
 </body>
 </html>
