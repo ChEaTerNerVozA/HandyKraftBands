@@ -2,8 +2,8 @@
 
 :root{
 
-    --main-color: #d3ad7f;
-    --beige: #F5F1E9;
+    --main-color: #ffa73d;
+    --beige: #f0eadd;
     --bg:#010103;
     --border:.1rem solid rgba(97, 93, 93, 0.3);
 }
@@ -67,7 +67,7 @@ section{
     padding: .9rem 3rem;
     font-size: 1.7rem;
     color: #fff;
-    background: var(--main-color);
+    background: #ffa73d;
     cursor: pointer;
 }
 
@@ -200,7 +200,7 @@ section{
 
 .header .cart-items-container.cart-item .content .price{
     font-size: 2rem;
-    color: var(--main-color);
+    color: #ffa73d;
 }
 
 .header .cart-items-container .btn{
@@ -377,7 +377,7 @@ max-width: 60rem;
 }
 
 .menu .box-container .box .price{
-    color: #E6B8A2;
+    color: #ffa73d;
     font-size: 2.5rem;
     padding: .5rem 0;
 }
@@ -670,7 +670,7 @@ max-width: 60rem;
     padding: .9rem 3rem;
     font-size: 1.7rem;
     color: #fff;
-    background: var(--main-color);
+    background: #ffa73d;
     cursor: pointer;
     display: flex;
     justify-content: center;

@@ -7,6 +7,7 @@
 
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
+    <link rel="icon" type="image/png" href="images/Logo.png">
 
 </head>
 <body>
@@ -18,7 +19,7 @@
 
     <nav class="navbar">
         <a href="index.html">მთავარი</a>
-        <a href="#">ჩვენ შესახებ</a>
+        <a href="ჩვენ-შესახებ.html">ჩვენ შესახებ</a>
         <a href="ფერების-კატალოგი.html">ფერების კატალოგი</a>
         <a href="პროდუქცია.html">პროდუქცია</a>
         <a href="საკონტაქტო.html">საკონტაქტო</a>
@@ -32,32 +33,26 @@
 
     <script>
         document.addEventListener("DOMContentLoaded", function() {
-            // Get elements
+
             const menuBtn = document.getElementById("menu-btn");
             const navbar = document.querySelector(".header .navbar");
     
-            // Toggle the 'active' class on the navbar when the menu button is clicked
             menuBtn.addEventListener("click", function() {
                 navbar.classList.toggle("active");
             });
     
-            // Close the menu if the user clicks outside of the navbar (works for mobile and desktop)
             document.addEventListener("click", function(event) {
-                // Check if the click is outside of the navbar and the menu button
                 if (!navbar.contains(event.target) && !menuBtn.contains(event.target)) {
                     navbar.classList.remove("active");
                 }
             });
     
-            // Optional: Add functionality for search and cart buttons
             document.getElementById("search-btn").addEventListener("click", function() {
                 console.log("Search icon clicked");
-                // Add search functionality here
             });
     
             document.getElementById("cart-btn").addEventListener("click", function() {
                 console.log("Cart icon clicked");
-                // Add cart functionality here
             });
         });
     </script>
@@ -89,38 +84,38 @@
     <div class="box-container">
 
         <div class="box">
-            <img src="images/Square Knot.png" alt="">
+            <img src="images/A001.png" alt="">
             <h3></h3>
             <div class="price">5 ლარი</div>
-            <a href="#" class="btn">შეუკვეთე</a>
+            <a href="A001.html" class="btn">შეუკვეთე</a>
         </div>
 
         <div class="box">
-            <img src="images/3Color Square Knot.png" alt="">
+            <img src="images/A002.png" alt="">
             <h3></h3>
-            <div class="price">6 ლარი</div>
-            <a href="#" class="btn">შეუკვეთე</a>
+            <div class="price">5 ლარი</div>
+            <a href="A002.html" class="btn">შეუკვეთე</a>
         </div>
 
         <div class="box">
-            <img src="images/Head Knot.png" alt="">
+            <img src="images/A003.png" alt="">
             <h3></h3>
             <div class="price">5 ლარი</span></div>
-            <a href="#" class="btn">შეუკვეთე</a>
+            <a href="A003.html" class="btn">შეუკვეთე</a>
         </div>
 
         <div class="box">
-            <img src="images/2Color Macmane Bracelet.png" alt="">
+            <img src="images/B001.png" alt="">
             <h3></h3>
-            <div class="price">5 ლარი</div>
-            <a href="#" class="btn">შეუკვეთე</a>
+            <div class="price">6 ლარი</div>
+            <a href="B001.html" class="btn">შეუკვეთე</a>
         </div>
 
         <div class="box">
-            <img src="images/Macmane Bracelet A025.png" alt="">
+            <img src="images/B002.png" alt="">
             <h3></h3>
-            <div class="price">7 ლარი</span></div>
-            <a href="#" class="btn">შეუკვეთე</a>
+            <div class="price">6 ლარი</span></div>
+            <a href="B002.html" class="btn">შეუკვეთე</a>
         </div>
 
     <div>
@@ -155,13 +150,13 @@
 
 <section class="footer">
     <div class="share">
-        <a href="#" class="fab fa-facebook-f"></a>
-        <a href="#" class="fab fa-instagram"></a>
+        <a href="https://www.facebook.com/profile.php?id=61573732992820" target="_blank" class="fab fa-facebook-f"></a>
+        <a href="https://www.instagram.com/handykrafterbands/" target="_blank" class="fab fa-instagram"></a>
     </div>
 
     <div class="links">
         <a href="index.html">მთავარი</a>
-        <a href="#">ჩვენ შესახებ</a>
+        <a href="ჩვენ-შესახებ.html">ჩვენ შესახებ</a>
         <a href="ფერების-კატალოგი.html">ფერების კატალოგი</a>
         <a href="პროდუქცია.html">პროდუქცია</a>
         <a href="საკონტაქტო.html">საკონტაქტო</a>

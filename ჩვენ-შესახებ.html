@@ -3,11 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> პროდუქცია </title>
+    <title>ჩვენ შესახებ</title>
 
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
-    <link rel="icon" type="image/png" href="images/Logo.png">
 
 </head>
 <body>
@@ -33,6 +32,7 @@
 
     <script>
         document.addEventListener("DOMContentLoaded", function() {
+        
             const menuBtn = document.getElementById("menu-btn");
             const navbar = document.querySelector(".header .navbar");
     
@@ -41,11 +41,12 @@
             });
     
             document.addEventListener("click", function(event) {
+                // Check if the click is outside of the navbar and the menu button
                 if (!navbar.contains(event.target) && !menuBtn.contains(event.target)) {
                     navbar.classList.remove("active");
                 }
             });
-    
+            
             document.getElementById("search-btn").addEventListener("click", function() {
                 console.log("Search icon clicked");
             });
@@ -68,85 +69,21 @@
 
 </header>
 
-<section class="menu" id="menu">
-
-    <h1 class="heading">our <span>products</span></h1>
-
-    <div class="box-container">
-
-        <div class="box">
-            <img src="images/A001.png" alt="">
-            <h3>A001</h3>
-            <div class="price">5 ლარი</div>
-            <a href="A001.html" class="btn">შეუკვეთე</a>
+    <section class="home" id="home">
+        <div class="content">
+            <h3> მაღაზიის შექმნის ისტორია</h3>
+            <p>ეს ყველაფერი მარტივი იდეით და შემოქმედებითობის გატაცებით დაიწყო. რაც დაიწყო როგორც პატარა ჰობი, სამაჯურების დამზადება მეგობრებისა და ოჯახისთვის.
+            როდესაც მოთხოვნა იზრდებოდა, მივხვდი, რომ ამაში უფრო მეტი იყო, ვიდრე უბრალოდ საყვარელი ადამიანებისთვის ხელნაკეთობა. 
+            მსურდა ჩემი შემოქმედება გამეზიარებინა ყველასთვის, ხალხს შევთავაზე საშუალება გაეკეთებინათ რაღაც მართლაც ხელნაკეთი, რაც მათ ინდივიდუალურ სტილზე მეტყველებდა. ასე რომ, მაღაზია დაიბადა. 
+            თითოეული სამაჯური დამზადებულია სიყვარულით და დეტალებისადმი ყურადღებით,  ჩვენი მისია მარტივია: მოგიტანოთ ხელოვნების ნიმუში, რომელიც შეგიძლიათ ატაროთ, თავი კარგად იგრძნოთ და შეიყვაროთ მომავალი წლების განმავლობაში. </p>
+			<p>კეთილი იყოს თქვენი მობრძანება ჩვენს ხელნაკეთი სამაჯურების მაღაზიაში - სადაც ყველა სამაჯური უფრო მეტია, ვიდრე უბრალოდ აქსესუარი, ეს არის ისტორია, რომელიც ელოდება მოყოლას.</p>
         </div>
-
-        <div class="box">
-            <img src="images/A002.png" alt="">
-            <h3>A002</h3>
-            <div class="price">5 ლარი</div>
-            <a href="A002.html  " class="btn">შეუკვეთე</a>
-        </div>
-
-        <div class="box">
-            <img src="images/A003.png" alt="">
-            <h3>A003</h3>
-            <div class="price">5 ლარი</span></div>
-            <a href="A003.html" class="btn">შეუკვეთე</a>
-        </div>
-
-        <div class="box">
-            <img src="images/A004.png" alt="">
-            <h3>A004</h3>
-            <div class="price">5 ლარი</div>
-            <a href="A004.html" class="btn">შეუკვეთე</a>
-        </div>
-
-        <div class="box">
-            <img src="images/A005.png" alt="">
-            <h3>A005</h3>
-            <div class="price">5 ლარი</div>
-            <a href="A005.html" class="btn">შეუკვეთე</a>
-        </div>
-
-        <div class="box">
-            <img src="images/B001.png" alt="">
-            <h3>B001</h3>
-            <div class="price">6 ლარი</span></div>
-            <a href="B001.html" class="btn">შეუკვეთე</a>
-        </div>
-
-        <div class="box">
-            <img src="images/B002.png" alt="">
-            <h3>B002</h3>
-            <div class="price">6 ლარი</span></div>
-            <a href="B002.html" class="btn">შეუკვეთე</a>
-        </div>
-
-        <div class="box">
-            <img src="" alt="">
-            <h3></h3>
-            <div class="price">5 ლარი</div>
-            <a href="#" class="btn">შეუკვეთე</a>
-        </div>
-        
-        <div class="box">
-            <img src="" alt="">
-            <h3></h3>
-            <div class="price"></div>
-            <a href="#" class="btn">შეუკვეთე</a>
-        </div>
-
-    </div>    
-
-    </div>
-
-</section>
+    </section>
 
 <section class="footer">
     <div class="share">
-        <a href="https://www.facebook.com/profile.php?id=61573732992820" class="fab fa-facebook-f"></a>
-        <a href="https://www.instagram.com/handykrafterbands/" class="fab fa-instagram"></a>
+        <a href="https://www.facebook.com/people/Handy-Krafter-Bands/61573732992820/#"  class="fab fa-facebook-f"></a>
+        <a href="#" class="fab fa-instagram"></a>
     </div>
 
     <div class="links">
@@ -160,7 +97,7 @@
     <div class="credit">created by <span>web designer</span> | all rights reserved</div>
     </section>
 
-    
     <script src="js/script.js"></script>
+
 </body>
 </html>
