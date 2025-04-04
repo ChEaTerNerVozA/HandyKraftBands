@@ -32,42 +32,29 @@
     </div>
 
     <script>
-    (function() {
-        emailjs.init("D6vmTiTgC-Lcz9Bul");
-    })();
-
-    document.getElementById("contactForm").addEventListener("submit", function(event) {
-        event.preventDefault();
-
-        console.log("🟢 Email is being sent");
-
-        let name = document.getElementById("name").value.trim();
-        let email = document.getElementById("email").value.trim();
-        let number = document.getElementById("number").value.trim();
-        let message = document.getElementById("message").value.trim();
-        let responseMessage = document.getElementById("responseMessage");
-
-        if (!name || !email || !number || !message) {
-            responseMessage.innerText = "Please fill in all fields.";
-            responseMessage.style.color = "red";
-            return;
-        }
-
-        emailjs.send("closedSky", "closedSky", {
-            name: name,
-            email: email,
-            number: number,
-            message: message
-        }).then(function(response) {
-            responseMessage.innerText = "შენი მონაცემები წარმატებით გაიგზავნა!";
-            responseMessage.style.color = "green";
-            document.getElementById("contactForm").reset();
-        }, function(error) {
-            responseMessage.innerText = "შენი მონაცემები ვერ გაიგზავნა, სცადე ხელახლა";
-            responseMessage.style.color = "red";
+        document.addEventListener("DOMContentLoaded", function() {
+            const menuBtn = document.getElementById("menu-btn");
+            const navbar = document.querySelector(".header .navbar");
+    
+            menuBtn.addEventListener("click", function() {
+                navbar.classList.toggle("active");
+            });
+    
+            document.addEventListener("click", function(event) {
+                if (!navbar.contains(event.target) && !menuBtn.contains(event.target)) {
+                    navbar.classList.remove("active");
+                }
+            });
+    
+            document.getElementById("search-btn").addEventListener("click", function() {
+                console.log("Search icon clicked");
+            });
+    
+            document.getElementById("cart-btn").addEventListener("click", function() {
+                console.log("Cart icon clicked");
+            });
         });
-    });
-</script>
+    </script>
 
 
     <div class="search-form">
@@ -107,7 +94,7 @@
         
             <div class="inputbox">
                 <span class="fas fa-comment"></span>
-                <input id="message" placeholder="ესკიზის ნომერი, ფერი 1 , ფერი 2, ფერი 3(თუ საჭიროა)" required></input>
+                <input id="message" placeholder="ესკიზის ნომერი, ფერი #1, ფერი #2, ფერი #3(თუ ირჩევთ B კატეგორიის სამაჯურს)" required></input>
             </div>
         
             <input type="submit" value="ინფორმაციის გაგზავნა" class="btn">
@@ -118,40 +105,41 @@
         <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
         <script>
             (function() {
-                emailjs.init("D6vmTiTgC-Lcz9Bul"); // Replace with your EmailJS Public Key
+                emailjs.init("D6vmTiTgC-Lcz9Bul");
             })();
         
             document.getElementById("contactForm").addEventListener("submit", function(event) {
                 event.preventDefault();
         
+                console.log("🟢 Email is being sent");
+        
                 let name = document.getElementById("name").value.trim();
                 let email = document.getElementById("email").value.trim();
                 let number = document.getElementById("number").value.trim();
+                let message = document.getElementById("message").value.trim();
                 let responseMessage = document.getElementById("responseMessage");
         
-                // Validate form fields
-                if (!name || !email || !number) {
-                    responseMessage.innerText = "Please fill in all fields.";
+                if (!name || !email || !number || !message) {
+                    responseMessage.innerText = "გთხოვთ შეავსოთ ველი.";
                     responseMessage.style.color = "red";
                     return;
                 }
         
-                // Send email using EmailJS
                 emailjs.send("closedSky", "closedSky", {
                     name: name,
                     email: email,
-                    number: number
+                    number: number,
+                    message: message
                 }).then(function(response) {
                     responseMessage.innerText = "შენი მონაცემები წარმატებით გაიგზავნა!";
                     responseMessage.style.color = "green";
-                    document.getElementById("contactForm").reset(); // Reset form fields
+                    document.getElementById("contactForm").reset();
                 }, function(error) {
                     responseMessage.innerText = "შენი მონაცემები ვერ გაიგზავნა, სცადე ხელახლა";
                     responseMessage.style.color = "red";
                 });
             });
         </script>
-    </div>
 
 </section>
 
